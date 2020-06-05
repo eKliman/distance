@@ -36,6 +36,9 @@ h6 {
   margin: 0;
   @extend %SFPD-Semibold;
 }
+p {
+  margin: 0;
+}
 a {
   color: inherit;
 }
@@ -157,6 +160,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
   }
   &__icon {
     fill: #002766;
@@ -164,6 +168,10 @@ body {
     &:hover {
       fill: #ffffff;
     }
+  }
+  &__icon-massages {
+    fill: #002766;
+    color: transparent;
   }
 }
 
@@ -212,9 +220,9 @@ body {
   &__icon {
     margin-right: 8px;
   }
-  &__icon-news {
-    fill: #e6f7ff;
-    color: #1890ff;
+  &__icon-massages {
+    fill: #1890ff;
+    color: #e6f7ff;
   }
   &__dropdown {
     margin-left: 18px;
@@ -228,8 +236,11 @@ body {
   }
 }
 
-.create-post {
+.news-feed {
   max-width: 588px;
+  width: 100%;
+}
+.create-post {
   width: 100%;
   background: #ffffff;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
@@ -280,5 +291,98 @@ body {
   }
   &__text-link {
     margin-right: 12px;
+  }
+}
+
+.post {
+  margin: 16px 0;
+  padding: 16px;
+  background: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  &__header {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+  }
+  &__author {
+    display: flex;
+    align-items: center;
+  }
+  &__author-icon {
+    width: 48px;
+    height: 48px;
+    margin-right: 12px;
+  }
+  &__author-name {
+    text-decoration: none;
+    @extend %SFPD-Semibold;
+    color: #0050b3;
+  }
+  &__settings {
+    display: flex;
+    align-items: center;
+  }
+  &__time {
+    color: #8c8c8c;
+    display: flex;
+    // display: flex;
+    align-items: center;
+    &::after {
+      display: inline-block;
+      content: '';
+      width: 4px;
+      height: 4px;
+      background: #bfbfbf;
+      border-radius: 50%;
+      margin: 0 6px;
+    }
+  }
+  &__dots {
+    border: none;
+    background-color: transparent;
+  }
+  &__text {
+    margin: 16px 0;
+  }
+  &__text-link {
+    color: #096dd9;
+    text-decoration: none;
+  }
+  &__image {
+    width: 100%;
+    border: 1px solid #bfbfbf;
+    border-radius: 4px;
+  }
+  &__likes {
+    display: flex;
+    align-items: center;
+  }
+  &__like-icon {
+    color: #e6f7ff;
+    fill: #1890ff;
+    margin-right: 4px;
+    // fill: #595959;
+  }
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid #e8e8e8;
+    margin-top: 9px;
+    padding-top: 16px;
+  }
+  &__button {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+  }
+  &__like-icon-btn {
+    color: transparent;
+    fill: #595959;
+  }
+  &__text-btn {
+    margin-left: 8px;
   }
 }
