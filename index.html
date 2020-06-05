@@ -7,11 +7,17 @@
   <title>Distance</title>
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
+  <script defer src="./js/script.js"></script>
 </head>
 
 <body>
   <div class="header">
     <div class="header__inner">
+      <button class="header__m-menu">
+        <span class="header__m-menu-line"></span>
+        <span class="header__m-menu-line"></span>
+        <span class="header__m-menu-line"></span>
+      </button>
       <div class="header__search">
         <input class="header__input" type="text" placeholder="Search">
       </div>
@@ -236,6 +242,58 @@
 
     </div>
     <!-- /.news-feed -->
+
+    <aside class="right-sidebar">
+      <div class="stories">
+        <div class="stories__header">
+          <h4 class="stories__title">Stories</h4>
+          <div class="stories__info">
+            <svg class="stories__clock" width="16" height="16">
+              <use xlink:href="img/icons.svg#clock"></use>
+            </svg>
+            <span class="stories__archive">Archive</span>
+            <span class="stories__settings">Settings</span>
+          </div>
+        </div>
+        <a href="#" class="stories__item-add">
+          <div class="stories__icon-add">+</div>
+          <div class="stories__info-add">
+            <h5 class="stories__title-add">Add to your story</h5>
+            <span class="stories__text-add">Share a photo or video or write something</span>
+          </div>
+        </a>
+        <a href="#" class="stories__item">
+          <img src="./img/concuria-icon.png" alt="concuria-icon" class="stories__icon-item">
+          <div class="stories__info-item">
+            <h5 class="stories__title-item">Concuria</h5>
+            <span class="stories__time-item">4 hours ago</span>
+          </div>
+        </a>
+        <a href="#" class="stories__item">
+          <img src="./img/figma-icon.png" alt="concuria-icon" class="stories__icon-item">
+          <div class="stories__info-item">
+            <h5 class="stories__title-item">Figma</h5>
+            <span class="stories__time-item">5 hours ago</span>
+          </div>
+        </a>
+        <a href="#" class="stories__item">
+          <img src="./img/ant_design-icon.png" alt="concuria-icon" class="stories__icon-item">
+          <div class="stories__info-item">
+            <h5 class="stories__title-item">Ant design</h5>
+            <span class="stories__time-item">6 hours ago</span>
+          </div>
+        </a>
+        <a href="#" class="stories__link-dropdown">
+          <svg class="stories__icon-dropdown" width="12" height="8">
+            <use xlink:href="img/icons.svg#dropdown"></use>
+          </svg>
+          <span class="stories__text-dropdown">See more...</span>
+        </a>
+      </div>
+      <div class="birthdays"></div>
+      <div class="your-page"></div>
+    </aside>
+    <!-- /.right-sidebar -->
   </div>
 </body>
 
