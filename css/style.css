@@ -332,11 +332,6 @@ body {
   color: #e6f7ff;
 }
 
-.sidebar__icon-news {
-  fill: #e6f7ff;
-  color: #1890ff;
-}
-
 .sidebar__dropdown {
   margin-left: 18px;
 }
@@ -563,6 +558,11 @@ body {
 .post__like-icon-btn {
   color: transparent;
   fill: #595959;
+}
+
+.post__comment-icon {
+  fill: #595959;
+  color: transparent;
 }
 
 .post__text-btn {
